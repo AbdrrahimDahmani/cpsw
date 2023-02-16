@@ -30,10 +30,10 @@ class cpsw {
   static upgradePsw(PasswordParam) {
     const chars =
       "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-=";
-    while (this.checkStrength(PasswordParams) != "strong") {
-      PasswordParams += chars[crypt.randomBytes(1)[0] % chars.length];
+    while (this.checkStrength(PasswordParam) != "strong") {
+      PasswordParam += chars[crypt.randomBytes(1)[0] % chars.length];
     }
-    return PasswordParams;
+    return PasswordParam;
   }
 
   static hashPsw(PasswordParam) {}
