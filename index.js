@@ -1,8 +1,6 @@
 import crypt from "crypt";
 
 class cpsw {
-    constructor() {}
-
     static generate(length = 16) {
         const characters =
             "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-=";
