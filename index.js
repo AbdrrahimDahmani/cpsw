@@ -36,7 +36,12 @@ class cpsw {
     return PasswordParam;
   }
 
-  static hashPsw(PasswordParam) {}
+  static hashPsw(PasswordParam) {
+    if (isHashed(PasswordParam)) {
+      return PasswordParam;
+    }
+    return generate(PasswordParam);
+  }
 }
 
 export default cpsw;
